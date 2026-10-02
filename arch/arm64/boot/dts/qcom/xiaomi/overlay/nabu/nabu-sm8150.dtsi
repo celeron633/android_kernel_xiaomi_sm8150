@@ -1148,26 +1148,6 @@ And public attribution of xiaomi platforms(like J20S and so and)
 		qcom,firmware-name = "slpi_nb";
 	};
 
-	gpio_keys {
-		hall_key {
-			label = "hall_key";
-			gpios = <&tlmm 9 GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>;
-			linux,code = <0>;
-			gpio-key,wakeup;
-			debounce-interval = <15>;
-		};
-		hall_key1 {
-			label = "hall_key1";
-			gpios = <&tlmm 83 GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>;
-			linux,code = <1>;
-			gpio-key,wakeup;
-			debounce-interval = <15>;
-		};
-	};
-
-
 	thermal_message: thermal-message {
 		board-sensor = "VIRTUAL-SENSOR";
 	};
